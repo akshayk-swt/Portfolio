@@ -1,0 +1,19 @@
+{
+  "name": "akshay-k-portfolio",
+  "version": "1.0.0",
+  "description": "Software Tester Personal Portfolio Website for Akshay K",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "software-tester",
+    "qa",
+    "manual-testing",
+    "dark-red-theme"
+  ],
+  "author": "Akshay K",
+  "license": "MIT"
+}

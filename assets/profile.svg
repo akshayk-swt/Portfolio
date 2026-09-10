@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="avatarGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E50914" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#080808" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="avatarBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2B35"/>
+      <stop offset="100%" stop-color="#292929"/>
+    </linearGradient>
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1B1B1B"/>
+      <stop offset="100%" stop-color="#101010"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background glow -->
+  <rect width="400" height="400" fill="#080808"/>
+  <circle cx="200" cy="200" r="180" fill="url(#avatarGlow)"/>
+  
+  <!-- Outer Ring -->
+  <circle cx="200" cy="200" r="190" fill="none" stroke="url(#avatarBorder)" stroke-width="3" opacity="0.6"/>
+  
+  <!-- Silhouette / Developer Avatar -->
+  <!-- Tech Grid in background -->
+  <path d="M 50 200 H 350 M 200 50 V 350" stroke="#292929" stroke-width="1" opacity="0.3"/>
+  <circle cx="200" cy="140" r="65" fill="#1B1B1B" stroke="#E50914" stroke-width="2"/>
+  <path d="M 90 350 C 90 230, 310 230, 310 350 Z" fill="url(#shirtGrad)" stroke="#292929" stroke-width="2"/>
+  
+  <!-- Code & QA Overlay Graphic Elements -->
+  <rect x="130" y="270" width="140" height="40" rx="8" fill="#151515" stroke="#E50914" stroke-width="1.5" opacity="0.9"/>
+  <text x="200" y="295" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">AKSHAY K | QA</text>
+  
+  <!-- Floating Checkmark -->
+  <circle cx="270" cy="110" r="18" fill="#E50914"/>
+  <path d="M 262 110 L 268 116 L 278 104" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>
