@@ -103,17 +103,6 @@ export default function Contact() {
                   </div>
                 </a>
               ))}
-
-              <div className="mt-6 p-5 bg-soft-mint/30 border border-mint/20 rounded-2xl">
-                <p className="text-sm text-dark-text/70 leading-relaxed">
-                  <strong className="text-dark-text">Note:</strong> Update your WhatsApp number, email, LinkedIn, and
-                  GitHub links in{' '}
-                  <code className="text-forest-green bg-soft-mint px-1.5 py-0.5 rounded text-xs font-mono">
-                    data/profile.ts
-                  </code>
-                  .
-                </p>
-              </div>
             </div>
           </ScrollAnimation>
 
