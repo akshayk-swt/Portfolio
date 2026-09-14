@@ -15,7 +15,7 @@ export const personal = {
   linkedin: 'https://www.linkedin.com/in/akshay178', // ← Replace with your LinkedIn URL
   github: 'https://github.com/akshayk-swt',       // ← Replace with your GitHub URL
   whatsapp: '919567367933',              // ← Replace with your WhatsApp number with country code (e.g. 919876543210)
-  resumePath: '/Resume.pdf.pdf',          // ← Resume file in public/
+  resumePath: '/resume.pdf',              // ← Resume file in public/resume.pdf
   profileImage: '/images/My photo.jpeg', // ← Replace with your photo (PNG/JPG)
 }
 
