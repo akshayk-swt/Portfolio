@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── CSS Custom Properties ─────────────────────────────────── */
+:root {
+  --color-deep-forest:  #0B2F27;
+  --color-forest-green: #164E41;
+  --color-mint:         #5EEAD4;
+  --color-soft-mint:    #CCFBF1;
+  --color-off-white:    #F8FAF9;
+  --color-dark-text:    #17211F;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  --radius-card: 1rem;
+  --transition-base: 200ms ease;
+  --transition-card: 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ── Base Reset ─────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .scroll-animate {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+body {
+  background-color: var(--color-off-white);
+  color: var(--color-dark-text);
+  font-family: var(--font-sans);
+  line-height: 1.65;
+  font-size: 1rem;
+}
+
+/* ── Scroll animation base state ───────────────────────────── */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.scroll-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children */
+.scroll-stagger > * {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scroll-stagger.visible > *:nth-child(1) { transition-delay: 0ms; }
+.scroll-stagger.visible > *:nth-child(2) { transition-delay: 80ms; }
+.scroll-stagger.visible > *:nth-child(3) { transition-delay: 160ms; }
+.scroll-stagger.visible > *:nth-child(4) { transition-delay: 240ms; }
+.scroll-stagger.visible > *:nth-child(5) { transition-delay: 320ms; }
+.scroll-stagger.visible > *:nth-child(6) { transition-delay: 400ms; }
+.scroll-stagger.visible > *:nth-child(7) { transition-delay: 480ms; }
+.scroll-stagger.visible > *:nth-child(8) { transition-delay: 560ms; }
+.scroll-stagger.visible > *:nth-child(9) { transition-delay: 640ms; }
+.scroll-stagger.visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Focus ring ────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-mint);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ── Scrollbar (subtle, on-brand) ──────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-off-white); }
+::-webkit-scrollbar-thumb {
+  background: #9ed5c9;
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--color-mint); }
+
+/* ── Selection ─────────────────────────────────────────────── */
+::selection {
+  background: var(--color-soft-mint);
+  color: var(--color-deep-forest);
+}
+
+/* ── Section spacing ───────────────────────────────────────── */
+.section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .section { padding-top: 7rem; padding-bottom: 7rem; }
+}

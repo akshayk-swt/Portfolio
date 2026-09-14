@@ -1,0 +1,13 @@
+RESUME PLACEHOLDER
+==================
+Place your actual resume PDF here:
+
+  public/resume.pdf
+
+This file will be linked from:
+  - The Navbar "Resume" button
+  - The Hero "Download Resume" button
+  - The Resume CTA section "Download Resume" button
+
+The path is configured in:
+  data/profile.ts  →  personal.resumePath
