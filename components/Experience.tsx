@@ -8,7 +8,7 @@ export default function Experience() {
     <section
       id="experience"
       aria-labelledby="experience-heading"
-      className="section bg-off-white"
+      className="section bg-white"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollAnimation>
@@ -36,7 +36,7 @@ export default function Experience() {
                     aria-hidden="true"
                   />
 
-                  <div className="bg-white border border-gray-100 rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-shadow duration-300">
+                  <div className="bg-off-white border border-gray-100 rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-shadow duration-300">
                     {/* Header */}
                     <div className="flex flex-wrap items-start justify-between gap-3 mb-5">
                       <div>
