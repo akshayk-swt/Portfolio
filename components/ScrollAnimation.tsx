@@ -10,10 +10,9 @@ interface ScrollAnimationProps {
 }
 
 /**
- * Wraps children in a div that fades + slides up into view on scroll.
- * Respects prefers-reduced-motion via CSS (see globals.css).
- * Triggers once — no looping.
- */
+  * Wraps children in a div that fades + slides up into view on scroll.
+  * Triggers smoothly as soon as the element approaches the viewport.
+  */
 export default function ScrollAnimation({
   children,
   className = '',
@@ -26,6 +25,11 @@ export default function ScrollAnimation({
     const el = ref.current
     if (!el) return
 
+    if (!('IntersectionObserver' in window)) {
+      el.classList.add('visible')
+      return
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -35,11 +39,22 @@ export default function ScrollAnimation({
           observer.unobserve(el)
         }
       },
-      { threshold: 0.12 }
+      { threshold: 0.01, rootMargin: '0px 0px 50px 0px' }
     )
 
     observer.observe(el)
-    return () => observer.disconnect()
+
+    // Safety fallback: ensure content is visible after 500ms even if observer didn't fire
+    const fallbackTimer = setTimeout(() => {
+      if (el && !el.classList.contains('visible')) {
+        el.classList.add('visible')
+      }
+    }, 500)
+
+    return () => {
+      observer.disconnect()
+      clearTimeout(fallbackTimer)
+    }
   }, [delay])
 
   return (

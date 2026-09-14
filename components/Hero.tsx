@@ -3,6 +3,8 @@ import { Download, ArrowRight, CheckSquare, Terminal } from 'lucide-react'
 import { personal } from '@/data/profile'
 
 export default function Hero() {
+  const profileImgSrc = encodeURI(personal.profileImage || '/images/profile-placeholder.svg')
+
   return (
     <section
       id="hero"
@@ -42,24 +44,36 @@ export default function Hero() {
           {/* ── Text content ── */}
           <div className="flex-1 text-center lg:text-left">
             {/* Eyebrow */}
-            <p className="inline-flex items-center gap-2 text-mint text-sm font-semibold tracking-widest uppercase mb-5 opacity-0 animate-[fadeUp_0.5s_ease_0.1s_forwards]">
+            <p
+              className="inline-flex items-center gap-2 text-mint text-sm font-semibold tracking-widest uppercase mb-5 animate-fade-up"
+              style={{ animationDelay: '0.1s' }}
+            >
               <span className="w-6 h-px bg-mint inline-block" aria-hidden="true" />
               Software Tester / QA Engineer
             </p>
 
             {/* Headline */}
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-off-white leading-tight tracking-tight mb-6 opacity-0 animate-[fadeUp_0.55s_ease_0.2s_forwards]">
+            <h1
+              className="text-5xl sm:text-6xl lg:text-7xl font-bold text-off-white leading-tight tracking-tight mb-6 animate-fade-up"
+              style={{ animationDelay: '0.2s' }}
+            >
               Hi, I&apos;m{' '}
               <span className="text-mint">Akshay K</span>
             </h1>
 
             {/* Tagline */}
-            <p className="text-soft-mint/75 text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 mb-10 opacity-0 animate-[fadeUp_0.55s_ease_0.35s_forwards]">
+            <p
+              className="text-soft-mint/75 text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 mb-10 animate-fade-up"
+              style={{ animationDelay: '0.35s' }}
+            >
               {personal.tagline}
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start opacity-0 animate-[fadeUp_0.55s_ease_0.5s_forwards]">
+            <div
+              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-up"
+              style={{ animationDelay: '0.5s' }}
+            >
               <a
                 href="#projects"
                 aria-label="View my projects"
@@ -80,7 +94,10 @@ export default function Hero() {
             </div>
 
             {/* Quick stats */}
-            <div className="flex flex-wrap gap-8 justify-center lg:justify-start mt-14 opacity-0 animate-[fadeUp_0.55s_ease_0.65s_forwards]">
+            <div
+              className="flex flex-wrap gap-8 justify-center lg:justify-start mt-14 animate-fade-up"
+              style={{ animationDelay: '0.65s' }}
+            >
               {[
                 { value: '3+', label: 'Projects Tested' },
                 { value: '9+', label: 'Skills' },
@@ -95,7 +112,10 @@ export default function Hero() {
           </div>
 
           {/* ── Profile image ── */}
-          <div className="flex-shrink-0 opacity-0 animate-[fadeUp_0.6s_ease_0.3s_forwards]">
+          <div
+            className="flex-shrink-0 animate-fade-up"
+            style={{ animationDelay: '0.3s' }}
+          >
             <div className="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-80 lg:h-80">
               {/* Decorative ring */}
               <div
@@ -110,15 +130,13 @@ export default function Hero() {
               {/* Image wrapper */}
               <div className="relative w-full h-full rounded-full overflow-hidden bg-forest-green border-4 border-mint/20 shadow-2xl shadow-black/40">
                 <Image
-                  src={personal.profileImage}
+                  src={profileImgSrc}
                   alt="Profile photo of Akshay K"
                   fill
                   priority
                   className="object-cover"
                   sizes="(max-width: 640px) 224px, (max-width: 1024px) 288px, 320px"
                 />
-                {/* Replace profile-placeholder.svg with your actual photo.
-                    Update the path in data/profile.ts → personal.profileImage */}
               </div>
             </div>
           </div>
@@ -128,7 +146,8 @@ export default function Hero() {
 
       {/* Scroll indicator */}
       <div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-soft-mint/40 opacity-0 animate-[fadeUp_0.5s_ease_1s_forwards]"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-soft-mint/40 animate-fade-up"
+        style={{ animationDelay: '1s' }}
         aria-hidden="true"
       >
         <span className="text-xs tracking-wider uppercase">Scroll</span>
