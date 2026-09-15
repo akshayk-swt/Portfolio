@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0B2F27"/>
+      <stop offset="100%" style="stop-color:#164E41"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5EEAD4"/>
+      <stop offset="100%" style="stop-color:#CCFBF1"/>
+    </linearGradient>
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#134438"/>
+      <stop offset="100%" style="stop-color:#0B2F27"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Grid overlay lines for QA/testing grid feel -->
+  <g stroke="#5EEAD4" stroke-width="0.5" opacity="0.08">
+    <line x1="0" y1="90" x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+
+  <!-- Browser Window Mockup -->
+  <rect x="50" y="35" width="700" height="360" rx="12" fill="url(#card-bg)" stroke="#5EEAD4" stroke-width="1" stroke-opacity="0.3"/>
+  
+  <!-- Window Header Bar -->
+  <path d="M 50 47 A 12 12 0 0 1 62 35 L 738 35 A 12 12 0 0 1 750 47 L 750 70 L 50 70 Z" fill="#0B2F27" opacity="0.9"/>
+  <circle cx="75" cy="52" r="5" fill="#FF5F56"/>
+  <circle cx="92" cy="52" r="5" fill="#FFBD2E"/>
+  <circle cx="109" cy="52" r="5" fill="#27C93F"/>
+
+  <!-- Address Bar -->
+  <rect x="140" y="44" width="420" height="16" rx="8" fill="#164E41" opacity="0.8"/>
+  <text x="155" y="56" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#5EEAD4" opacity="0.8">avahcollege.ac.in — QA Testing Environment</text>
+  
+  <!-- QA Status Pill in Header -->
+  <rect x="620" y="44" width="110" height="16" rx="8" fill="#5EEAD4" opacity="0.2"/>
+  <text x="675" y="56" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#5EEAD4" text-anchor="middle" font-weight="600">MANUAL QA PASSED</text>
+
+  <!-- College Website Header Layout Mockup -->
+  <rect x="75" y="85" width="650" height="40" rx="6" fill="#164E41" opacity="0.6"/>
+  <!-- College Logo Mock -->
+  <circle cx="98" cy="105" r="12" fill="#5EEAD4" opacity="0.8"/>
+  <rect x="120" y="98" width="160" height="8" rx="4" fill="#CCFBF1" opacity="0.9"/>
+  <rect x="120" y="110" width="100" height="5" rx="2" fill="#5EEAD4" opacity="0.5"/>
+
+  <!-- Nav items -->
+  <rect x="450" y="102" width="40" height="6" rx="3" fill="#5EEAD4" opacity="0.7"/>
+  <rect x="505" y="102" width="40" height="6" rx="3" fill="#5EEAD4" opacity="0.7"/>
+  <rect x="560" y="102" width="40" height="6" rx="3" fill="#5EEAD4" opacity="0.7"/>
+  <rect x="615" y="102" width="45" height="6" rx="3" fill="#5EEAD4" opacity="0.7"/>
+  <rect x="670" y="97" width="40" height="16" rx="4" fill="#5EEAD4" opacity="0.9"/>
+
+  <!-- Website Banner / Hero -->
+  <rect x="75" y="135" width="370" height="140" rx="8" fill="#164E41" opacity="0.4"/>
+  <rect x="95" y="155" width="220" height="12" rx="4" fill="#CCFBF1" opacity="0.9"/>
+  <rect x="95" y="175" width="300" height="7" rx="3.5" fill="#5EEAD4" opacity="0.6"/>
+  <rect x="95" y="188" width="260" height="7" rx="3.5" fill="#5EEAD4" opacity="0.4"/>
+  <rect x="95" y="215" width="90" height="24" rx="6" fill="url(#accent)"/>
+
+  <!-- Testing Inspection Floating Panel -->
+  <g transform="translate(465, 135)">
+    <rect width="260" height="240" rx="10" fill="#0B2F27" stroke="#5EEAD4" stroke-width="1" stroke-opacity="0.4"/>
+    <rect width="260" height="3" rx="1" fill="url(#accent)"/>
+    
+    <!-- Title -->
+    <text x="16" y="24" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#5EEAD4" tracking="1">TEST SUITE EXECUTION</text>
+    
+    <!-- Test item 1 -->
+    <circle cx="24" cy="48" r="7" fill="#5EEAD4" opacity="0.2"/>
+    <path d="M 21 48 L 23 50 L 27 46" stroke="#5EEAD4" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <text x="38" y="51" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#CCFBF1" opacity="0.9">Functional Verification</text>
+    <rect x="195" y="43" width="48" height="14" rx="7" fill="#5EEAD4" opacity="0.2"/>
+    <text x="219" y="53" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#5EEAD4" text-anchor="middle" font-weight="600">PASSED</text>
+
+    <!-- Test item 2 -->
+    <circle cx="24" cy="74" r="7" fill="#5EEAD4" opacity="0.2"/>
+    <path d="M 21 74 L 23 76 L 27 72" stroke="#5EEAD4" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <text x="38" y="77" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#CCFBF1" opacity="0.9">UI & Responsiveness</text>
+    <rect x="195" y="69" width="48" height="14" rx="7" fill="#5EEAD4" opacity="0.2"/>
+    <text x="219" y="79" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#5EEAD4" text-anchor="middle" font-weight="600">PASSED</text>
+
+    <!-- Test item 3 -->
+    <circle cx="24" cy="100" r="7" fill="#5EEAD4" opacity="0.2"/>
+    <path d="M 21 100 L 23 102 L 27 98" stroke="#5EEAD4" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <text x="38" y="103" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#CCFBF1" opacity="0.9">Link Integrity & Navigation</text>
+    <rect x="195" y="95" width="48" height="14" rx="7" fill="#5EEAD4" opacity="0.2"/>
+    <text x="219" y="105" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#5EEAD4" text-anchor="middle" font-weight="600">PASSED</text>
+
+    <!-- Test item 4 -->
+    <circle cx="24" cy="126" r="7" fill="#5EEAD4" opacity="0.2"/>
+    <path d="M 21 126 L 23 128 L 27 124" stroke="#5EEAD4" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <text x="38" y="129" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#CCFBF1" opacity="0.9">Usability Testing</text>
+    <rect x="195" y="121" width="48" height="14" rx="7" fill="#5EEAD4" opacity="0.2"/>
+    <text x="219" y="131" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#5EEAD4" text-anchor="middle" font-weight="600">PASSED</text>
+
+    <!-- Test item 5 -->
+    <circle cx="24" cy="152" r="7" fill="#5EEAD4" opacity="0.2"/>
+    <path d="M 21 152 L 23 154 L 27 150" stroke="#5EEAD4" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <text x="38" y="155" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#CCFBF1" opacity="0.9">Cross-Browser Testing</text>
+    <rect x="195" y="147" width="48" height="14" rx="7" fill="#5EEAD4" opacity="0.2"/>
+    <text x="219" y="157" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#5EEAD4" text-anchor="middle" font-weight="600">PASSED</text>
+
+    <line x1="16" y1="172" x2="244" y2="172" stroke="#5EEAD4" stroke-width="0.5" opacity="0.2"/>
+
+    <!-- Tester Role Badge in Panel -->
+    <rect x="16" y="184" width="228" height="42" rx="6" fill="#164E41" opacity="0.7"/>
+    <text x="28" y="202" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#5EEAD4" font-weight="600">ROLE ASSIGNED</text>
+    <text x="28" y="217" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#CCFBF1">Manual Software Tester</text>
+  </g>
+
+  <!-- Website Content Cards Mockup -->
+  <rect x="75" y="285" width="115" height="90" rx="6" fill="#164E41" opacity="0.5"/>
+  <rect x="85" y="295" width="70" height="6" rx="3" fill="#5EEAD4" opacity="0.6"/>
+  <rect x="85" y="308" width="95" height="4" rx="2" fill="#CCFBF1" opacity="0.3"/>
+  <rect x="85" y="316" width="85" height="4" rx="2" fill="#CCFBF1" opacity="0.3"/>
+
+  <rect x="202" y="285" width="115" height="90" rx="6" fill="#164E41" opacity="0.5"/>
+  <rect x="212" y="295" width="70" height="6" rx="3" fill="#5EEAD4" opacity="0.6"/>
+  <rect x="212" y="308" width="95" height="4" rx="2" fill="#CCFBF1" opacity="0.3"/>
+  <rect x="212" y="316" width="85" height="4" rx="2" fill="#CCFBF1" opacity="0.3"/>
+
+  <rect x="330" y="285" width="115" height="90" rx="6" fill="#164E41" opacity="0.5"/>
+  <rect x="340" y="295" width="70" height="6" rx="3" fill="#5EEAD4" opacity="0.6"/>
+  <rect x="340" y="308" width="95" height="4" rx="2" fill="#CCFBF1" opacity="0.3"/>
+  <rect x="340" y="316" width="85" height="4" rx="2" fill="#CCFBF1" opacity="0.3"/>
+
+  <!-- Label -->
+  <text x="400" y="422" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#5EEAD4" text-anchor="middle" opacity="0.6" font-weight="600">College Website — Manual Software Testing</text>
+</svg>

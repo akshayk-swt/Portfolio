@@ -64,39 +64,91 @@ export const experience = [
 ]
 
 // ── PROJECTS ─────────────────────────────────────────────────
+export const manualTestingProjects = [
+  {
+    id: 'bstackdemo',
+    name: 'BStackDemo E-Commerce Web Application',
+    role: 'Manual Tester',
+    subtitle: 'E-Commerce Manual Testing',
+    description:
+      'Performed manual testing of an e-commerce web application by validating key user flows and identifying functional issues.',
+    image: '/images/project-bstackdemo.svg',
+    tags: [
+      'Login Testing',
+      'Product Search Testing',
+      'Product Selection Testing',
+      'Cart Testing',
+      'Wishlist Testing',
+      'Checkout Testing',
+      'Payment Flow Testing',
+      'Order Placement Testing',
+      'Functional Testing',
+      'UI Testing',
+      'Test Case Design',
+      'Test Execution',
+      'Bug Identification & Reporting',
+    ],
+    liveUrl: undefined,
+    githubUrl: undefined,
+  },
+  {
+    id: 'college-website',
+    name: 'A.V. Abdurahiman Haji Arts & Science College Website',
+    role: 'Manual Tester',
+    subtitle: 'Website Manual Testing',
+    description:
+      'Performed manual testing of the college website to identify functional issues, UI inconsistencies, broken links, and usability problems.',
+    image: '/images/project-college-website.svg',
+    tags: [
+      'Functional Testing',
+      'UI Testing',
+      'Usability Testing',
+      'Test Case Design',
+      'Test Execution',
+      'Bug Identification & Reporting',
+      'Cross-Browser Testing',
+    ],
+    liveUrl: undefined,
+    githubUrl: undefined,
+  },
+]
+
 export const projects = [
   {
     id: 'tidebill',
     name: 'TideBill',
+    role: 'Developer & Tester',
     subtitle: 'Invoice Management Application',
     description:
       'A full-featured invoice management web app with a responsive dashboard, customer records, and PDF invoice generation. Involved both building and thorough manual testing of all core features.',
-    image: '/images/project-tidebill.svg', // ← Replace with a screenshot (PNG/JPG)
-    tags: ['Invoice Management', 'PDF Generation', 'Dashboard', 'Manual Testing'],
-    liveUrl: '#',     // ← Replace with live project URL or remove
-    githubUrl: '#',   // ← Replace with GitHub repo URL
+    image: '/images/project-tidebill.svg',
+    tags: ['Invoice Management', 'PDF Generation', 'Dashboard', 'Manual Testing', 'Functional Testing', 'UI Testing'],
+    liveUrl: '#',
+    githubUrl: '#',
   },
   {
     id: 'gamemates',
     name: 'GameMates',
+    role: 'Developer & Tester',
     subtitle: 'Multiplayer Browser Game Platform',
     description:
       'A real-time multiplayer browser game platform featuring competitive games including Name Place Thing and an Imposter drawing game, with live sync across players.',
-    image: '/images/project-gamemates.svg', // ← Replace with a screenshot (PNG/JPG)
-    tags: ['Multiplayer', 'Real-time', 'Browser Games', 'WebSockets'],
-    liveUrl: '#',     // ← Replace with live project URL or remove
-    githubUrl: '#',   // ← Replace with GitHub repo URL
+    image: '/images/project-gamemates.svg',
+    tags: ['Multiplayer', 'Real-time', 'Browser Games', 'WebSockets', 'Manual Testing', 'UI Testing'],
+    liveUrl: '#',
+    githubUrl: '#',
   },
   {
     id: 'tourtrack',
     name: 'TourTrack',
+    role: 'Developer & Tester',
     subtitle: 'Tour Operator Management Application',
     description:
       'A comprehensive management system for tour operators — covers trip and bus scheduling, driver management, travel sheet generation, profit/loss reporting, and customer PDF exports.',
-    image: '/images/project-tourtrack.svg', // ← Replace with a screenshot (PNG/JPG)
-    tags: ['Tour Management', 'PDF Reports', 'Driver Management', 'P&L Tracking'],
-    liveUrl: '#',     // ← Replace with live project URL or remove
-    githubUrl: '#',   // ← Replace with GitHub repo URL
+    image: '/images/project-tourtrack.svg',
+    tags: ['Tour Management', 'PDF Reports', 'Driver Management', 'P&L Tracking', 'Manual Testing', 'Functional Testing'],
+    liveUrl: '#',
+    githubUrl: '#',
   },
 ]
 

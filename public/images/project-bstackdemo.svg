@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0B2F27"/>
+      <stop offset="100%" style="stop-color:#164E41"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5EEAD4"/>
+      <stop offset="100%" style="stop-color:#CCFBF1"/>
+    </linearGradient>
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#134438"/>
+      <stop offset="100%" style="stop-color:#0B2F27"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Grid overlay lines -->
+  <g stroke="#5EEAD4" stroke-width="0.5" opacity="0.08">
+    <line x1="0" y1="90" x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="200" y1="0" x2="200" y2="450"/>
+    <line x1="400" y1="0" x2="400" y2="450"/>
+    <line x1="600" y1="0" x2="600" y2="450"/>
+  </g>
+
+  <!-- Browser Window Mockup -->
+  <rect x="50" y="35" width="700" height="360" rx="12" fill="url(#card-bg)" stroke="#5EEAD4" stroke-width="1" stroke-opacity="0.3"/>
+  
+  <!-- Window Header Bar -->
+  <path d="M 50 47 A 12 12 0 0 1 62 35 L 738 35 A 12 12 0 0 1 750 47 L 750 70 L 50 70 Z" fill="#0B2F27" opacity="0.9"/>
+  <circle cx="75" cy="52" r="5" fill="#FF5F56"/>
+  <circle cx="92" cy="52" r="5" fill="#FFBD2E"/>
+  <circle cx="109" cy="52" r="5" fill="#27C93F"/>
+
+  <!-- Address Bar -->
+  <rect x="140" y="44" width="400" height="16" rx="8" fill="#164E41" opacity="0.8"/>
+  <text x="155" y="56" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#5EEAD4" opacity="0.8">bstackdemo.com — E-Commerce QA Testing</text>
+
+  <!-- Status Pill -->
+  <rect x="600" y="44" width="130" height="16" rx="8" fill="#5EEAD4" opacity="0.2"/>
+  <text x="665" y="56" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#5EEAD4" text-anchor="middle" font-weight="600">E-COMMERCE QA PASSED</text>
+
+  <!-- E-Commerce Navbar Mock -->
+  <rect x="75" y="85" width="650" height="36" rx="6" fill="#164E41" opacity="0.7"/>
+  <!-- Logo -->
+  <rect x="90" y="96" width="90" height="14" rx="4" fill="url(#accent)"/>
+  <!-- Search Bar -->
+  <rect x="200" y="93" width="220" height="20" rx="10" fill="#0B2F27" opacity="0.8" stroke="#5EEAD4" stroke-width="0.5" stroke-opacity="0.5"/>
+  <text x="215" y="106" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#5EEAD4" opacity="0.5">Search products...</text>
+
+  <!-- Cart / User Icons -->
+  <rect x="610" y="94" width="45" height="18" rx="4" fill="#5EEAD4" opacity="0.2"/>
+  <text x="632" y="106" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#5EEAD4" text-anchor="middle" font-weight="600">Cart (3)</text>
+  <rect x="665" y="94" width="45" height="18" rx="4" fill="#5EEAD4" opacity="0.9"/>
+  <text x="687" y="106" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#0B2F27" text-anchor="middle" font-weight="700">Checkout</text>
+
+  <!-- Product Grid & Testing Overlay -->
+  <!-- Product Card 1 -->
+  <rect x="75" y="135" width="120" height="160" rx="8" fill="#164E41" opacity="0.5"/>
+  <rect x="85" y="145" width="100" height="70" rx="4" fill="#0B2F27" opacity="0.6"/>
+  <rect x="85" y="225" width="75" height="6" rx="3" fill="#CCFBF1" opacity="0.8"/>
+  <rect x="85" y="236" width="45" height="6" rx="3" fill="#5EEAD4" opacity="0.6"/>
+  <rect x="85" y="252" width="100" height="18" rx="4" fill="#5EEAD4" opacity="0.3"/>
+  <text x="135" y="264" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#5EEAD4" text-anchor="middle" font-weight="600">+ Add to Cart</text>
+
+  <!-- Product Card 2 -->
+  <rect x="210" y="135" width="120" height="160" rx="8" fill="#164E41" opacity="0.5"/>
+  <rect x="220" y="145" width="100" height="70" rx="4" fill="#0B2F27" opacity="0.6"/>
+  <rect x="220" y="225" width="75" height="6" rx="3" fill="#CCFBF1" opacity="0.8"/>
+  <rect x="220" y="236" width="45" height="6" rx="3" fill="#5EEAD4" opacity="0.6"/>
+  <rect x="220" y="252" width="100" height="18" rx="4" fill="#5EEAD4" opacity="0.3"/>
+  <text x="270" y="264" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#5EEAD4" text-anchor="middle" font-weight="600">+ Add to Cart</text>
+
+  <!-- QA Checklist Floating Card (Right) -->
+  <g transform="translate(345, 135)">
+    <rect width="380" height="240" rx="10" fill="#0B2F27" stroke="#5EEAD4" stroke-width="1" stroke-opacity="0.4"/>
+    <rect width="380" height="3" rx="1" fill="url(#accent)"/>
+
+    <text x="16" y="24" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#5EEAD4" tracking="1">E-COMMERCE USER FLOW VALIDATION</text>
+
+    <!-- Flow 1 -->
+    <circle cx="24" cy="48" r="6" fill="#5EEAD4" opacity="0.2"/>
+    <path d="M 21 48 L 23 50 L 27 46" stroke="#5EEAD4" stroke-width="1.5" fill="none"/>
+    <text x="36" y="51" font-family="Inter, system-ui, sans-serif" font-size="9.5" fill="#CCFBF1">Login &amp; Product Search Flow</text>
+    <rect x="310" y="42" width="54" height="14" rx="7" fill="#5EEAD4" opacity="0.2"/>
+    <text x="337" y="52" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#5EEAD4" text-anchor="middle" font-weight="600">VERIFIED</text>
+
+    <!-- Flow 2 -->
+    <circle cx="24" cy="72" r="6" fill="#5EEAD4" opacity="0.2"/>
+    <path d="M 21 72 L 23 74 L 27 70" stroke="#5EEAD4" stroke-width="1.5" fill="none"/>
+    <text x="36" y="75" font-family="Inter, system-ui, sans-serif" font-size="9.5" fill="#CCFBF1">Cart &amp; Wishlist Operations</text>
+    <rect x="310" y="66" width="54" height="14" rx="7" fill="#5EEAD4" opacity="0.2"/>
+    <text x="337" y="76" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#5EEAD4" text-anchor="middle" font-weight="600">VERIFIED</text>
+
+    <!-- Flow 3 -->
+    <circle cx="24" cy="96" r="6" fill="#5EEAD4" opacity="0.2"/>
+    <path d="M 21 96 L 23 98 L 27 94" stroke="#5EEAD4" stroke-width="1.5" fill="none"/>
+    <text x="36" y="99" font-family="Inter, system-ui, sans-serif" font-size="9.5" fill="#CCFBF1">Checkout &amp; Payment Process</text>
+    <rect x="310" y="90" width="54" height="14" rx="7" fill="#5EEAD4" opacity="0.2"/>
+    <text x="337" y="100" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#5EEAD4" text-anchor="middle" font-weight="600">VERIFIED</text>
+
+    <!-- Flow 4 -->
+    <circle cx="24" cy="120" r="6" fill="#5EEAD4" opacity="0.2"/>
+    <path d="M 21 120 L 23 122 L 27 118" stroke="#5EEAD4" stroke-width="1.5" fill="none"/>
+    <text x="36" y="123" font-family="Inter, system-ui, sans-serif" font-size="9.5" fill="#CCFBF1">Order Placement &amp; UI Validation</text>
+    <rect x="310" y="114" width="54" height="14" rx="7" fill="#5EEAD4" opacity="0.2"/>
+    <text x="337" y="124" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#5EEAD4" text-anchor="middle" font-weight="600">VERIFIED</text>
+
+    <!-- Tester Role Badge in Panel -->
+    <rect x="16" y="145" width="348" height="80" rx="6" fill="#164E41" opacity="0.7"/>
+    <text x="28" y="165" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#5EEAD4" font-weight="600">QA SCOPE &amp; ROLE</text>
+    <text x="28" y="182" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#CCFBF1">Manual Software Tester</text>
+    <text x="28" y="200" font-family="Inter, system-ui, sans-serif" font-size="9.5" fill="#5EEAD4" opacity="0.8">Test Case Design | Execution | Defect Identification</text>
+  </g>
+
+  <!-- Label -->
+  <text x="400" y="422" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#5EEAD4" text-anchor="middle" opacity="0.6" font-weight="600">BStackDemo E-Commerce — Manual Testing</text>
+</svg>
